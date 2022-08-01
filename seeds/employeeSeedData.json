@@ -1,0 +1,12 @@
+[
+    {
+        "first_name":"Trusty",
+        "last_name":"Dusty",
+        "role_id" : 1
+    },
+    {
+        "first_name":"Mr",
+        "last_name":"Manager",
+        "role_id" : 1
+    }
+]
