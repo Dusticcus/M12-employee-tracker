@@ -25,22 +25,11 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET a single driver
+// GET a single employee
 router.get('/:id', async (req, res) => {
   try {
     const employeeData = await Employee.findByPk(req.params.id, {
-      // include: [{ model: License }, { model: Car }],
-      // attributes: {
-        // include: [
-        //   [
-        //     // Use plain SQL to add up the total mileage
-        //     sequelize.literal(
-        //       '(SELECT SUM(mileage) FROM car WHERE car.driver_id = driver.id)'
-        //     ),
-        //     'totalMileage',
-        //   ],
-        // ],
-      // },
+
     });
 
     if (!employeeData) {
